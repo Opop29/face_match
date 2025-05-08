@@ -1,9 +1,9 @@
 {
-  "name": "it35_lab",
+  "name": "face_match",
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://opop29.github.io/it35-lab",
+  "homepage": "https://opop29.github.io/face_match",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

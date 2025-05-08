@@ -13,7 +13,7 @@ const Login: React.FC = () => {
   const navigation = useIonRouter();
 
   const doLogin = () => {
-    navigation.push('/it35-lab/app', 'forward', 'replace');
+    navigation.push('/face_match/app', 'forward', 'replace');
   };
 
   return (
