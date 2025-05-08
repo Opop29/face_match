@@ -1,35 +1,35 @@
-import { 
-    IonButton,
-    IonButtons,
-      IonContent, 
-      IonHeader, 
-      IonMenuButton, 
-      IonPage, 
-      IonTitle, 
-      IonToolbar, 
-      useIonRouter
-  } from '@ionic/react';
-  
-  const Login: React.FC = () => {
-    const navigation = useIonRouter();
+import {
+  IonButton,
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  useIonRouter
+} from '@ionic/react';
+import './Login.css'; // Import custom CSS
 
-    const doLogin = () => {
-        navigation.push('/it35-lab/app','forward','replace');
-    }
-    return (
-      <IonPage>
-        <IonHeader>
-          <IonToolbar>
-            <IonTitle>Login</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <IonContent className='ion-padding'>
-            <IonButton onClick={() => doLogin()} expand="full">
-                Login
-            </IonButton>
-        </IonContent>
-      </IonPage>
-    );
+const Login: React.FC = () => {
+  const navigation = useIonRouter();
+
+  const doLogin = () => {
+    navigation.push('/it35-lab/app', 'forward', 'replace');
   };
-  
-  export default Login;
+
+  return (
+    <IonPage>
+      <IonHeader>
+        <IonToolbar color="dark" className="custom-toolbar">
+          <IonTitle className="custom-title">🎯 Find Match Character</IonTitle>
+        </IonToolbar>
+      </IonHeader>
+      <IonContent className="ion-padding custom-content">
+        <IonButton onClick={doLogin} expand="full" className="custom-button">
+          📸 Take a One Pic
+        </IonButton>
+      </IonContent>
+    </IonPage>
+  );
+};
+
+export default Login;

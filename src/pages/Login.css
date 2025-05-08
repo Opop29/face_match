@@ -1,0 +1,34 @@
+.custom-toolbar {
+    --background: #000;
+    --color: #FFD700;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+  }
+  
+  .custom-title {
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  .custom-content {
+    --background: linear-gradient(to bottom, #000000, #1a1a1a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .custom-button {
+    --background: #FFD700;
+    --color: #000;
+    --border-radius: 12px;
+    --box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease;
+  }
+  
+  .custom-button:hover {
+    transform: scale(1.05);
+  }
+  
